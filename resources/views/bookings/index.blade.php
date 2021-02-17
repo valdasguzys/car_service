@@ -30,13 +30,12 @@
                 <th>Actions</th>
             </tr>
             
-            @foreach ($bookings as $booking)
+            @foreach ($bookings as $booking) 
             <tr>
                 <td>{{ $booking->make }}</td>
                 <td>{{ $booking->model }}</td>
                 <td>{{ $booking->year }}</td>
-                <td>{{ $booking->customer_id }}</td>
-                {{-- <td>{{ $booking->customer->surname }}</td> --}}
+                <td>{{ $booking->customer->surname }}</td>
                 <td>{{ $booking->description }}</td>
 
                 <td>

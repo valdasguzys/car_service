@@ -10,8 +10,8 @@ class Booking extends Model
     public $fillable = ['make', 'model', 'year', 'description', 'customer_id'];
 
 
-    public function customers(){
-        return $this->belongsTo('App\Models\Customers');
+    public function customer(){
+        return $this->belongsTo('App\Models\Customer');
     }
 
 }
